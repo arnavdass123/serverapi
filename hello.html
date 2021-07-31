@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            background-color: #444;
+        }
+
+        #box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border: 2px solid #fff;
+            width: 400px;
+            height: 200px;
+            border-radius: 2%;
+            margin-left: 50%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+        }
+
+        .videocards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <video width="650" controls>
+        <% console.log("index.ejs is 📌") %>
+        <source id="source" src="/video" type="video/mp4">
+    </video>
+
+    <div class="videocards">
+
+        <a href="http://localhost:3000/api/courses/1">
+            <div id="box">
+                Ed shreen shape of you 
+            </div>
+        </a>
+    
+        <a href="http://localhost:3000/api/courses/2">
+            <div id="box">
+                no excuss video is here
+            </div>
+        </a>
+    
+    
+        <a href="http://localhost:3000/api/courses/3">
+            <div id="box">
+              24 hours song
+            </div>
+        </a>
+    
+    </div>
+  
+
+
+    <!-- script is here -->
+</body>
+
+</html>

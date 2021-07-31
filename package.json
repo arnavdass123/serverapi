@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.4.1",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "Api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
