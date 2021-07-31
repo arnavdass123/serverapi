@@ -25,7 +25,7 @@ app.get("/api/courses/:id", (req, res) => {
 });
 
 
-app.get("/my-data-json-reciever", (req, res) => {
+app.get("/", (req, res) => {
  res.sendFile(__dirname+"/hello.html")
 });
 
