@@ -5,7 +5,7 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node src/server.js"
   },
   "name": "Api",
   "version": "1.0.0",

@@ -11,7 +11,7 @@ const courses = [
   { id: 3, name: "y2mate.com - Shawn Mendes  24 Hours Lyric Video_1080p.mp4" },
 ];
 
-let videopath;
+
 app.get("/api/courses", (req, res) => {
   res.send(courses);
 });
@@ -24,6 +24,10 @@ app.get("/api/courses/:id", (req, res) => {
   res.send(course);
 });
 
+
+app.get("/", (req, res) => {
+ res.sendFile(__dirname+"/hello.html")
+});
 
 
 app.get("/api/courses", (req, res) => {
