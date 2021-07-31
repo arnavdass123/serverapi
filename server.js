@@ -1,6 +1,7 @@
 const express = require("express");
 const Joi = require("joi");
 const app = express();
+let port = process.env.PORT || 3000;
 
 const courses = [
   {
@@ -32,5 +33,4 @@ app.get("/api/courses", (req, res) => {
 });
 
 // port
-const port = process.env.PORT || 3000;
 app.listen(3000, () => console.log(`listening on ${port}`));
