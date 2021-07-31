@@ -11,7 +11,7 @@ const courses = [
   { id: 3, name: "y2mate.com - Shawn Mendes  24 Hours Lyric Video_1080p.mp4" },
 ];
 
-let videopath ;
+let videopath;
 app.get("/api/courses", (req, res) => {
   res.send(courses);
 });
@@ -21,16 +21,10 @@ app.get("/api/courses/:id", (req, res) => {
   if (!course) {
     res.status(404).send("the course with the given ID was not found");
   }
-  videopath = course.name;
-
-  res.sendFile(__dirname + "/hello.html");
+  res.send(course);
 });
 
-app.get("/video", (req, res) => {
-  console.log(videopath);
-  require("./packege")(req, res, videopath);
-  // Ensure there is a range given for the video
-});
+
 
 app.get("/api/courses", (req, res) => {
   res.send(req.params);
