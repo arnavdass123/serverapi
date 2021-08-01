@@ -1,7 +1,6 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
   "main": "packege.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -159,7 +158,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -170,5 +169,6 @@
   "bugs": {
     "url": "https://github.com/arnavdass123/serverapi/issues"
   },
-  "homepage": "https://github.com/arnavdass123/serverapi#readme"
+  "homepage": "https://github.com/arnavdass123/serverapi#readme",
+  "description": ""
 }
