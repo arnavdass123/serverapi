@@ -28,9 +28,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/hello.html");
 });
 
-app.get("/api/courses", (req, res) => {
-  res.send(req.params);
-});
+// app.get("/api/courses", (req, res) => {
+//   res.send(req.params);
+// });
 
 // port
 app.listen(3000, () => console.log(`listening on ${port}`));
